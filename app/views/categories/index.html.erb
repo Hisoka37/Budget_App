@@ -1,0 +1,21 @@
+<div class="category">
+<h2>My Categories</h2>
+<a href="/logout">
+<i style='font-size:24px' class='fas'>&#xf2f5;</i>
+</a>
+</div>
+
+ <div>
+    <% if @category.nil? %>
+      <h3>Add a Category</h3>
+    <% else %>
+    <% @Categories.each do |category| %>
+   <a href="<%= category_payments_path(category.id) %>">
+    <div>
+    <img src= "<%= category.icon%>" alt="icon">
+    <p><%= category.name %></p>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+
