@@ -1,4 +1,4 @@
-<div>
+<div class = "category_head">
      <a href="<%= categories_path %>">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
@@ -8,9 +8,9 @@
     </a>
 </div>
 <%= form_with(model: @category) do |form| %>
-    <div>
+    <div class= "form-container">
         <%= form.text_field :name, placeholder: "Name" %>
         <%= form.text_field :icon, placeholder: "Icon Link" %>
-         <%= form.submit "Create", class: "submit-button" %>
+        <%= form.submit "Create", class: "submit-button" %>
     </div>
 <% end %>
