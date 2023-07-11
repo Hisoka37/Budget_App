@@ -17,8 +17,7 @@ class PaymentsController < ApplicationController
       @payment = Payment.new
     end
   
-    def edit
-    end
+    def edit; end
   
     def create
       @payment = Payment.new(payment_params)

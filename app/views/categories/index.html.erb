@@ -6,16 +6,23 @@
 </div>
 
  <div>
-    <% if @category.nil? %>
+    <% if @categories.nil? %>
       <h3>Add a Category</h3>
     <% else %>
-    <% @Categories.each do |category| %>
+    <% @categories.each do |category| %>
    <a href="<%= category_payments_path(category.id) %>">
     <div>
-    <img src= "<%= category.icon%>" alt="icon">
+    <img src= "<%= category.icon %>" alt="icon">
     <p><%= category.name %></p>
     </div>
     <% end %>
     <% end %>
+
+     <a href="/categories/new">
+        <div>
+            <i class="fa-solid fa-plus"></i>
+            <p>Add Category</p>
+        </div>
+    </a>
   </div>
 
