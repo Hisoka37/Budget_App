@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :categories do 
+    resources :payments
+  end
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
- root 'home#homepage'
-  # Defines the root path route ("/")
-  # root "articles#index"
-  get 'homepage', to: 'home#homepage'
+  devise_scope :user do
+    get '/logout', to: 'devise/sessions#destroy'
+  end  
+  root to: 'users#index'
 end
