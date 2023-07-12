@@ -145,10 +145,10 @@ a { text-decoration: none; }
 }
 
 .title_one {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    margin-bottom: 3rem;
-    text-align: center;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .buttons {
