@@ -1,0 +1,30 @@
+<div class="category_head">
+<h2>My Categories</h2>
+<a href="/logout">
+<i style='font-size:24px' class='fas'>&#xf2f5;</i>
+</a>
+</div>
+
+ <div>
+    <% if @categories.nil? %>
+      <h3>Add a Category</h3>
+    <% else %>
+    <% @categories.each do |category| %>
+   <a href="<%= category_payments_path(category.id) %>">
+    <div class = "category">
+    <img src= "<%= category.icon %>" alt="icon" calss="icon">
+    <p><%= category.name %></p>
+    <p> Total: <%= category.total_transaction_amount%>$</p>
+    </div>
+    <% end %>
+    <% end %>
+     <div class = "footer_container">
+     <a href="/categories/new">
+        <div class = "footer">
+            <p>Add Category</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+     </a>
+    </div>
+  </div>
+

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BudgetApp</title>
+    <title>SpendWise</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,10 +14,15 @@
   <body>
    <p class="notice"><%= notice %></p>
    <p class="alert"><%= alert %></p>
-      <%= if user_signed_in? %>
-      <%= current_user.email %>
-      <% end %>
-      <%= link_to 'Log Out' , destroy_user_session_path, method: :delete %>
     <%= yield %>
   </body>
 </html>
+
+### In this PR I : 
+- Used params from browser requests in a safe way.
+- Used controllers to handle requests and render empty views.
+- Used preprocessed html file with embedded Ruby code.
+- Used layouts and templates for shared content.
+- Used database migration files to maintain database schema.
+- Used validations for models.
+- Secured app from n+1 problems.

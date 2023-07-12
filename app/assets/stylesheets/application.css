@@ -1,15 +1,271 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lobster", cursive;
+}
+
+a { text-decoration: none; }
+
+:root {
+  --primary-color: #3778c2;
+  --secondary-color: #5fb523;
+  --text-color: #434b54;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 1% 2%;
+  width: 90%;
+  border: 2px solid var(--text-color);
+  margin-inline: auto;
+}
+
+.category p {
+  color: var(--text-color);
+  font-size: 1.4em;
+}
+
+.category_head {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
+  background-color: var(--primary-color);
+}
+
+.category_head i {
+  font-size: 1.3em;
+}
+
+.category img {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+  gap: 10px;
+  border: 1px solid white;
+  width: 100%;
+  margin-inline: auto;
+  padding: 1em 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.footer p {
+  color: white;
+  font-size: 100%;
+}
+
+.footer i {
+  font-size: 1.3em;
+}
+
+.footer_container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer_link {
+  color: white;
+  font-size: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  gap: 10px;
+}
+
+.form-container .submit-button {
+  width: 175px;
+  background-color: var(--secondary-color);
+  padding: 0.5em 1em;
+  color: white;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 3px;
+}
+
+.form-container .submit-button:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form-container input[type="text"] {
+  padding: 0.5em 1em;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: white;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.title_one {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  padding: 1em;
+}
+
+.buttons .signin {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  cursor: pointer;
+}
+
+.buttons .signup {
+  background-color: white;
+  color: var(--text-color);
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  cursor: pointer;
+}
+
+.signin:hover,
+.signup:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.form h2 {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.user_form {
+  background-color: white;
+  padding: 3em 3em;
+  border-radius: 8px;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.field {
+  margin-bottom: 2px;
+}
+
+.field label {
+  font-weight: bold;
+  color: #666;
+}
+
+.field input[type="email"],
+.field input[type="text"],
+.field input[type="password"],
+.field input[type="checkbox"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #999;
+  background-color: transparent;
+  color: #666;
+}
+
+.field input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.field input[type="email"]:focus,
+.field input[type="password"]:focus {
+  border-bottom-color: #4caf50;
+}
+
+.field_box {
+  font-weight: bold;
+  color: #666;
+  display: flex;
+  padding-top: 8px;
+  gap: 5px;
+}
+
+.user_form_two {
+  background-color: white;
+  padding: 3em 3em;
+  border-radius: 8px;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
