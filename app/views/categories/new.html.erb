@@ -7,7 +7,7 @@
         <i class="fa-solid fa-right-from-bracket"></i>
     </a>
 </div>
-<%= form_with(model: @category) do |form| %>
+<%= form_with(model: @category, url:categories_path) do |form| %>
     <div class= "form-container">
         <%= form.text_field :name, placeholder: "Name" %>
         <%= form.text_field :icon, placeholder: "Icon Link" %>
