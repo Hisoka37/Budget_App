@@ -84,7 +84,7 @@ In order to run this project you need:
 Clone this repository by using the command line to your desired folder:  
 
 ```sh
-git clone https://github.com/ngeelani48/budget-manager.git
+git clone  https://github.com/Hisoka37/Budget_App.git
 
 cd budget-manager
 ```
@@ -148,7 +148,7 @@ Leave a star if you like the project.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the project. And design credits goes to:
+I would like to thank Microverse for the project. And design credits go to:
 [@Gregoire Vella](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) - author of design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
