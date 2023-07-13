@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: lato, sans-serif;
 }
 
 p,
@@ -12,8 +12,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Lobster", cursive;
+  font-family: Merienda, sans-serif;
+  font-weight: 600;
 }
+
 
 a { text-decoration: none; }
 
