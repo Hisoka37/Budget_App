@@ -59,7 +59,7 @@ SpendWise a mobile web application where user can manage his/her budget: user ha
 ## Live Demo
 
 - [Live Demo](https://spendwise-jolr.onrender.com/)
-- [Project video Link]
+- [Project video Link](https://www.loom.com/share/310412cfee864f67b113a641be9b30c5?sid=e5ca893a-648c-4323-9531-e592d1739623)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
