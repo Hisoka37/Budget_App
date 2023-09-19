@@ -31,7 +31,7 @@
   - [📝 License ](#-license-)
 
 
-# 📖 Budget Manager <a name="about-project"></a>
+# 📖 SpendWise <a name="about-project"></a>
 
 SpendWise a mobile web application where user can manage his/her budget: user have a list of transactions associated with a category, so that user can see how much money he/she spent and on what.
 
